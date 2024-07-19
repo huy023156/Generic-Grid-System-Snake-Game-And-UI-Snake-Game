@@ -189,7 +189,7 @@ public class SnakeGameManager : MonoBehaviour
 		nextCell = grid.GetGridObject(nextX, nextY);
 
 		// Kiểm tra va chạm với chính mình
-		if (nextCell.GetCurrentStatus() == SnakeCellGridObject.Status.Snake)
+		if (nextCell.GetCurrentStatus() == SnakeCellGridObject.Status.Snake && nextCell != snakeCubeList[snakeCubeList.Count - 1].GetCell())
 		{
 			Time.timeScale = 0;
 			Debug.Log("gameOver");

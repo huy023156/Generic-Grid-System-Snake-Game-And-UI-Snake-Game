@@ -385,7 +385,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   snakeMapVisual: {fileID: 418763674}
-  stepTimerMax: 0
+  stepTimerMax: 0.35
 --- !u!4 &1527269615
 Transform:
   m_ObjectHideFlags: 0

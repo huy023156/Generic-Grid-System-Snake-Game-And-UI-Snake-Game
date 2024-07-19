@@ -218,7 +218,7 @@ public class Board : MonoBehaviour
 		nextCell = grid.Rows[nextY].Cells[nextX];
 
 		// Kiểm tra va chạm với chính mình
-		if (nextCell.HasSnakeTile())
+		if (nextCell.HasSnakeTile() && nextCell != snakeTiles[snakeTiles.Count - 1].GetCell())
 		{
 			Time.timeScale = 0;
 			Debug.Log("gameOver");
