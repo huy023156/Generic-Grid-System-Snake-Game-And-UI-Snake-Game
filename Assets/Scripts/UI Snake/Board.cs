@@ -14,7 +14,7 @@ public class Board : MonoBehaviour
 
 	[SerializeField]
 	private Tile tilePrefab;
-	private Grid grid;
+	private TileGrid grid;
 	private List<Tile> snakeTiles;
 
 	private Tile head;
@@ -40,7 +40,7 @@ public class Board : MonoBehaviour
 	private void Awake()
 	{
 		Instance = this;
-		grid = GetComponentInChildren<Grid>();
+		grid = GetComponentInChildren<TileGrid>();
 		snakeTiles = new List<Tile>();
 		stepTimerMax = 0.2f;
 		currentDirection = Direction.Right;
